@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h1 class="h1-header">SampleSite</h1>
+      <h3 class="purchase"><i class="fas fa-shopping-cart"></i></h3>
+    </nav>
+    <!-- carousel -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img
+          src="../public/iphone-12_specs__ffy8c0h8c2ai_og.png"
+          style="width: 100%"
+        />
+        <div class="text">
+          <h3>Lorem ipsum</h3>
+          <br />
+          dolor sit amet consectetur adipisicing elit. <br />
+          Eius dignissimos quod eum at cum magni alias dolores, necessitatibus
+          ad. <br />
+          Ducimus asperiores neque hic, consequuntur quisquam maxime omnis!
+          <br />
+          <button type="button" class="btn">Buy now</button>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="../public/Apple-Watch-Series-6-เ-1080x630.png"
+          style="width: 100%"
+        />
+        <div class="text" style="color: whitesmoke;">Apple watch</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="../public/apple-w.png" style="width: 100%" />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div id="card-wrap">
+      <div class="card-wrap-inner">
+        <!-- <div id="card"></div> -->
+        
+        <!-- <div class="card">
+          <div class="card-header">
+            <img
+              src="../public/iphone-12_specs__ffy8c0h8c2ai_og.png"
+              class="img-iphone"
+              alt="iphone.png"
+            />
+          </div>
+          <div class="card-content">
+            <h3 style="padding: 1rem">Iphone 12</h3>
+            <div class="price">
+              <h5>$123</h5>
+              <button type="button" class="btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="../public/iphone-12_specs__ffy8c0h8c2ai_og.png"
+              class="img-iphone"
+              alt="iphone.png"
+            />
+          </div>
+          <div class="card-content">
+            <h3 style="padding: 1rem">Iphone 12</h3>
+            <div class="price">
+              <h5>$123</h5>
+              <button type="button" class="btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="../public/iphone-12_specs__ffy8c0h8c2ai_og.png"
+              class="img-iphone"
+              alt="iphone.png"
+            />
+          </div>
+          <div class="card-content">
+            <h3 style="padding: 1rem">Iphone 12</h3>
+            <div class="price">
+              <h5>$123</h5>
+              <button type="button" class="btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="../public/iphone-12_specs__ffy8c0h8c2ai_og.png"
+              class="img-iphone"
+              alt="iphone.png"
+            />
+          </div>
+          <div class="card-content">
+            <h3 style="padding: 1rem">Iphone 12</h3>
+            <div class="price">
+              <h5>$123</h5>
+              <button type="button" class="btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="../public/iphone-12_specs__ffy8c0h8c2ai_og.png"
+              class="img-iphone"
+              alt="iphone.png"
+            />
+          </div>
+          <div class="card-content">
+            <h3 style="padding: 1rem">Iphone 12</h3>
+            <div class="price">
+              <h5>$123</h5>
+              <button type="button" class="btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="../public/iphone-12_specs__ffy8c0h8c2ai_og.png"
+              class="img-iphone"
+              alt="iphone.png"
+            />
+          </div>
+          <div class="card-content">
+            <h3 style="padding: 1rem">Iphone 12</h3>
+            <div class="price">
+              <h5>$123</h5>
+              <button type="button" class="btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="../public/iphone-12_specs__ffy8c0h8c2ai_og.png"
+              class="img-iphone"
+              alt="iphone.png"
+            />
+          </div>
+          <div class="card-content">
+            <h3 style="padding: 1rem">Iphone 12</h3>
+            <div class="price">
+              <h5>$123</h5>
+              <button type="button" class="btn-order">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="../public/iphone-12_specs__ffy8c0h8c2ai_og.png"
+              class="img-iphone"
+              alt="iphone.png"
+            />
+          </div>
+          <div class="card-content">
+            <h3 style="padding: 1rem">Iphone 12</h3>
+            <div class="price">
+              <h5>$123</h5>
+              <button type="button" class="btn-order">Order</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="close">x</div>
+      <div>
+        <h2>Sumary</h2>
+        <div class="list-items">
+          <div id="pay-price"></div>
+        </div>
+        <button>Pay</button>
+      </div>
+    </div>
+    <div class="modal2">
+      <div class="close2">x</div>
+      <div>
+
+        <h2>Infomation</h2>
+
+        <div class="list-items2">
+          
+          <div id="info" >
+            <div class="h-responsive" style="margin-bottom: 2rem;">
+              <img id="picture" >
+            </div>
+            <div style="padding-left: 3rem;">
+              <div style="display: flex; text-transform: uppercase;">
+                name: <div id="name" style="margin-left: 2rem;"></div>
+              </div>
+              <div style="display: flex;  text-transform: uppercase;">
+                brand: <div id="brand"  style="margin-left: 2rem;"></div>
+              </div>
+              <div style="display: flex;  text-transform: uppercase;">
+                description: <div id="description"  style="margin-left: 2rem;"></div>
+              </div>
+              <div style="display: flex;  text-transform: uppercase;">
+                price: <div id="price"  style="margin-left: 2rem;"></div>
+              </div>
+              <button type="button"  id="btn-add"  style="margin-top: 1rem;">Add</button>
+            </div>    
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <footer>@copyright 2019 FED Basic Assessment</footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

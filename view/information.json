@@ -1,0 +1,64 @@
+{
+  "product": [
+    {
+      "name": "iphone 12 Promax",
+      "brand": "apple",
+      "description": "iphone 12 Promax",
+      "picture": "../public/iphone-12_specs__ffy8c0h8c2ai_og.png",
+
+      "price": "280"
+    },
+    {
+      "name": "iphone 12",
+      "brand": "apple",
+      "picture": "../public/iphone-12_specs__ffy8c0h8c2ai_og.png",
+      "description": "iphone 12",
+      "price": "270"
+    },
+    {
+      "name": "iphone 12 mini",
+      "brand": "apple",
+      "picture": "../public/iphone-12_specs__ffy8c0h8c2ai_og.png",
+      "description": "iphone 12mini",
+      "price": "260"
+    },
+    {
+      "name": "iphone 11  Promax",
+      "brand": "apple",
+      " description": "iphone 11",
+      "picture": "../public/iphone-11-fa.png",
+
+      "price": "250"
+    },
+    {
+      "name": "iphone 11",
+      "brand": "apple",
+      "description": "iphone 12 Promax",
+      "picture": "../public/iphone-11-fa.png",
+
+      "price": "240"
+    },
+    {
+      "name": "iphone Xr",
+      "brand": "apple",
+      "picture": "../public/iphone-12_specs__ffy8c0h8c2ai_og.png",
+      "description": "iphone 12",
+      "price": "230"
+    },
+    {
+      "name": "iphone Xmax",
+      "brand": "apple",
+      "picture": "../public/iphone-12_specs__ffy8c0h8c2ai_og.png",
+      "description": "iphone 12mini",
+      "price": "220"
+    },
+    {
+      "name": "iphone X",
+      "brand": "apple",
+      " description": "iphone 11",
+      "picture": "../public/iphone-12_specs__ffy8c0h8c2ai_og.png",
+
+      "price": "210"
+    }
+  ]
+}
