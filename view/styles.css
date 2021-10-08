@@ -166,11 +166,15 @@ img {
 #card {
   display: flex;
   flex-direction: column;
-  height: 22rem;
+  height: 25rem;
   width: 100%;
   border: 1px solid rgb(221 221 221);
   background-color: white;
   border-radius: 15px;
+  transition: 0.4s;
+}
+#card:hover {
+  transform: scale(1.01, 1.01);
 }
 .card-header {
   height: 15rem;
@@ -218,7 +222,7 @@ img {
   display: none;
   position: absolute;
   width: 70%;
-  height: 87vh;
+  height: 740px;
   top: 120px;
   left: 15%;
   background-color: white;
@@ -253,6 +257,38 @@ img {
 .h-responsive {
   height: 520px;
 }
+#info-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  padding-left: 1rem;
+}
+#btn-add {
+  width: 4rem;
+}
+.btn-buy {
+  bottom: 10px;
+  position: absolute;
+  width: 120px;
+  left: 20px;
+  height: 2rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(31, 141, 204),
+    rgb(26, 101, 214)
+  );
+  border: 1px solid rgb(31, 141, 204);
+  color: whitesmoke;
+  transition: 1s;
+}
+.btn-buy:hover {
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    rgb(26, 101, 214),
+    rgb(31, 141, 204)
+  );
+}
 @media only screen and (max-width: 300px) {
   .prev,
   .next,
@@ -273,14 +309,17 @@ img {
     overflow-x: hidden;
   }
   .h-responsive {
-    height: 220px;
+    height: 270px;
   }
   .modal2 {
-    height: 65vh;
+    height: 480px;
   }
   .slideshow-container {
     margin-top: 0;
     /* max-height: 197px; */
+  }
+  #info-content {
+    font-size: 14px;
   }
 }
 @media only screen and (max-device-width: 450px) {
@@ -296,7 +335,7 @@ img {
     height: 24rem;
   }
   .modal2 {
-    height: 85vh;
+    height: 800px;
   }
   .h-responsive {
     height: 600px;

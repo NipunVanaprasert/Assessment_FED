@@ -68,6 +68,7 @@ function appendData(data) {
       brand.innerHTML = info.brand;
       description.innerHTML = info.description;
       price.innerHTML = "$" + info.price;
+      addCart(info);
     });
   });
 }
@@ -119,12 +120,11 @@ btn_close2.addEventListener("click", function () {
 
 function addCart(data) {
   var btnAdd = document.getElementById("btn-add");
-  var btn = document.cre;
 
-  data.map((info) => {
-    btnAdd.addEventListener("click", function () {
-      console.log(info.name);
-    });
-    console.log(info);
+  btnAdd.addEventListener("click", function () {
+    var list = [];
+    list.push(data.price);
+    console.log(list);
+    console.log("cart2", data.name);
   });
 }
