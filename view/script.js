@@ -12,6 +12,7 @@ fetch("information.json")
   .then(function (data) {
     console.log(data.product);
     appendData(data.product);
+    addCart(data.product);
   })
   .catch(function (err) {
     console.log("error" + err);
@@ -28,7 +29,7 @@ function appendData(data) {
     var btn = document.createElement("button");
     var h3 = document.createElement("h3");
     var head_topic = document.createElement("h3");
-    var btn_add = document.getElementById("btn-add");
+
     price.className = "price";
     btn.className = "btn-order";
     btn.innerText = "Order";
@@ -59,6 +60,7 @@ function appendData(data) {
       var description = document.getElementById("description");
       var price = document.getElementById("price");
       var picture = document.getElementById("picture");
+      console.log("this is product", info);
       name.innerHTML = info.name;
       picture.className = "img-iphone";
       picture.style.borderRadius = "0";
@@ -114,9 +116,15 @@ btn_close2.addEventListener("click", function () {
   modal.style.display = "none";
   modal2.style.display = "none";
 });
-// var test = document.querySelectorAll(".btn-order");
-// console.log(test);
-// test.addEventListener("click", logdata);
-// function logdata() {
-//   console.log("teat");
-// }
+
+function addCart(data) {
+  var btnAdd = document.getElementById("btn-add");
+  var btn = document.cre;
+
+  data.map((info) => {
+    btnAdd.addEventListener("click", function () {
+      console.log(info.name);
+    });
+    console.log(info);
+  });
+}
